@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+  <title><%= @title %></title>
+  <%@title = "HOME"%>
+  <%= render 'layouts/stylesheets' %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body onload="load();">
+
+	<center>
+		<div id="container">
+			<div id="message" class="hide"></div>
+			<div id="caption">
+				<%= image_tag('logo_300.png') %>
+			</div>
+			<div id="login_container">
+				<form action="login.php" method="post">
+					<center>
+
+						<div id="login_border" class="radius_super">
+							<div id="login_panel" class="radius_big">
+								<table width="120px">
+									<tr>
+										<td class="index_label">Email Address</td>
+									</tr>
+									<tr>
+										<td><input type="text" id="username" name="username"
+									class="index_input_text" autocomplete="on" /></td>
+
+									<tr>
+										<td class="index_label">Password</td>
+									</tr>
+									<tr>
+										<td><input type="password" id="password" name="password"
+									class="index_input_text" autocomplete="on" /></td>
+									</tr>
+								</table>	
+								<div class="index_label" style="padding: 10px 0; font-size: 10px; text-align: center">
+									<label for="remember"
+										style="font-family: Arial, Helvetica, sans-serif; font-size: 13px">
+
+										<input type="checkbox" name="remember" id="remember"
+										style="position: relative; bottom: -2px;" /> Remeber me for 7
+										days</label>
+								</div>
+								<div style="margin-top: 5px; padding-bottom: 5px">
+									<p>
+										<input type="submit" id="index_submit" class="button" value="Submit" />
+										<input type="hidden" name="action" value="logon">
+									</p>
+								</div>
+
+							</div>
+						</div>
+					</center>
+				</form>
+			</div>
+		</div>
+	</center>
+</body>
+</html>

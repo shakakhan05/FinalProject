@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+  <title><%= @title %></title>
+  <%@title = "Login"%>
+  <%= render 'layouts/stylesheets' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+	<center>
+		<div id="container">
+			<div id="message" class="hide"></div>
+			<div id="caption">
+				<%= image_tag('logo_300.png') %>
+			</div>
+			<div id="content-container">
+		
+		<div id="content">
+			<center>
+			<div id="newuser_border" class="radius_super">
+				<div id="login_panel" class="radius_big">
+               
+			<h1><div class = "index_label_large">Sign in</h1>
+
+			<%= form_for(:session, :url => sessions_path) do |f|%>
+				
+				<div class="index_label">
+					<%= f.label :email %></div>
+					<div class = "index_input_text_2">
+					<%= f.text_field :email %></div>
+								<div class="index_label">
+					<%= f.label :password %></div>
+					<div class= "index_input_text_2">
+					<%= f.password_field :password %></div>
+					<br/>
+				
+				<%= f.submit 'Login', :class => 'button' %>
+					<a href="/users/new" class="signup_button round"><input type= "button"class="button" value="New User?"/>
+				</div>
+			<% end %>
+
+	</center>
+	</div>
+	</div>
+</html>
+

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Prodgrpid:</b>
+  <%= @offer.prodgrpid %>
+</p>
+
+<p>
+  <b>Sdate:</b>
+  <%= @offer.sDate %>
+</p>
+
+<p>
+  <b>Edate:</b>
+  <%= @offer.eDate %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @offer.Name %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @offer.Status %>
+</p>
+
+
+<%= link_to 'Edit', edit_offer_path(@offer) %> |
+<%= link_to 'Back', offers_path %>

@@ -1,0 +1,148 @@
+/* CSS Document */
+#search_container{
+    text-align: center;
+}
+#search_container span{
+    font-weight: bold;
+}
+#search_results div{
+     display: table; 
+    
+}
+div .search_result {
+    text-align: center;
+    padding-left:10px;
+    border-top: 1px solid #DDDDDD;
+    float: left;
+    max-width:400px;
+    width: 49%;
+	height: 180px;
+    font-size:12px;
+}
+
+div .search_result_image {
+    max-width: 200px;
+	height: 120px;
+	width: 49%;
+	vertical-align: middle;
+	margin: auto;
+	display: table-cell !important;
+	padding-left:10px;
+}
+
+div .search_result_data {
+	display: table-cell !important;
+    float: left;
+    height: 120px;
+    padding: 20px 5px 0px;
+    width: 100%;
+}
+div .search_result_data div{
+    width: 100%;
+}
+
+div .search_result_des {
+    margin-bottom: 5px;
+}
+div#search_results{
+    width: 100%;
+    display: table;
+}
+
+.search_product_img {
+	max-width: 150px;
+	max-height: 120px;
+}
+
+.result_vdr {
+    color:#000;
+    font-weight: normal;
+}
+
+/*new style*/
+#search_title{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    width: 100%;
+}
+#search_title_msg{
+	padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px !important;
+    float:left;
+	width: 100%	
+}
+.search_page_nav_border{
+    border: 2px solid #fff;
+    border-radius:99px;
+    box-shadow: 0 1px 2px #666;
+    margin:10px 0;	
+}
+.search_page_nav{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;	
+    border: 2px solid #DC291E;
+    padding: 3px 10px;
+    border-radius:20px;
+    text-shadow: 1px 1px 0 #fff;
+    line-height: 20px;
+}
+.search_page_nav span{
+    font-size: 14px;	
+    margin-right: 5px;
+    margin-left: 5px;	
+}
+.search_page_nav_arrow{
+    position: relative;
+    top: 2px;
+    margin: 0
+}
+.search_page_nav a, .search_page_nav a:visited{
+    font-size: 14px;
+    color: #DC291E;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.search_page_nav a:hover{
+    color: #004B91;
+}
+.search_page_nav div a{
+}
+#search_show_filter{
+    float: right;
+    position: relative;
+    margin-left: 5px;
+	width: 95px;
+}
+#search_apply_filter{
+    position: relative;
+    margin-left: 5px;
+	width: 95px;
+    padding: 3px 0px !important;
+}
+#search_show_filter:hover{
+    box-shadow:  0 0 3px #000, inset 0 0 6px #fff;;
+}
+#search_filter_panel_border{
+    margin:10px 0; 
+    box-shadow: 0 1px 2px #666;
+	width: 590px;
+	margin: 10px auto;
+}
+#search_filter_panel{
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px 20px 5px;
+    text-shadow: 1px 1px 0 #fff;
+}
+#search_filter_panel th{
+	padding: 2px 5px;
+}
+#search_filter_panel input, #search_filter_panel select, #search_filter_panel option{
+	font-size: 13px;
+	padding: 0px 2px;
+}

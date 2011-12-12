@@ -1,0 +1,46 @@
+<%= form_for(@offer) do |f| %>
+  <% if @offer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@offer.errors.count, "error") %> prohibited this offer from being saved:</h2>
+
+      <ul>
+      <% @offer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+</div>
+			<center>
+						<div id="newuser_border" class="radius_super">
+							<div id="login_panel" class="radius_big">
+								<table width="100px">
+									<tr>
+										
+									</tr>
+  <div class="index_label" >
+    <%= f.label :prodgrpid %><br />
+    <%= f.number_field :prodgrpid %>
+  </div>
+  <div class="index_label" >
+    <%= f.label :sDate %><br />
+    <%= f.text_field :sDate %>
+  </div>
+  <div class="index_label" >
+    <%= f.label :eDate %><br />
+    <%= f.text_field :eDate %>
+  </div>
+ <div class="index_label" >
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+ <div class="index_label" >
+    <%= f.label :Status %><br />
+    <%= f.text_field :Status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  </div>
+ </center>
+<% end %>

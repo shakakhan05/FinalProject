@@ -1,0 +1,83 @@
+/* CSS Document */
+#stats_container{
+    text-align: center;
+}
+#stats_container span{
+    font-weight: bold;
+}
+/*new style*/
+#stats_title{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    width: 100%;
+}
+#stats_title_msg{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px !important;
+    float:left;
+    width: 100%	
+}
+#stats_show_filter{
+    float: right;
+    position: relative;
+    margin-left: 5px;
+    width: 95px;
+}
+#stats_apply_filter{
+    position: relative;
+    margin-left: 5px;
+    width: 95px;
+    padding: 3px 0px !important;
+}
+#stats_show_filter:hover{
+    box-shadow:  0 0 3px #000, inset 0 0 6px #fff;;
+}
+#stats_filter_panel_border{
+    margin:10px 0; 
+    box-shadow: 0 1px 2px #666;
+    width: 560px;
+    margin: 10px auto;
+}
+#stats_filter_panel{
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px 20px 5px;
+    text-shadow: 1px 1px 0 #fff;
+}
+#stats_filter_panel th{
+    padding: 2px 5px;
+}
+#stats_filter_panel input, #stats_filter_panel select, #stats_filter_panel option{
+    font-size: 13px;
+    padding: 0px 2px;
+}
+#set_stats_start_date, #set_stats_end_date{
+    position: relative;
+    bottom: -2px;
+    margin: 0 1px;
+    cursor: pointer;
+}
+#stats_spending_line{
+    height: 325px;
+    width: 100%;
+}
+#stats_spending_bar{
+    height: 325px;
+    width: 100%;
+}
+#spending_pie_chart_left{
+    margin-top: 4px;
+    width: 100%;
+    height: 250px;
+    margin-right: 2px;
+}
+#spending_pie_chart_right{
+    margin-top: 4px;
+    margin-left: 2px;
+    width: 100%;
+    height: 250px;
+}

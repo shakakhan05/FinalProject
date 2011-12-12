@@ -1,0 +1,115 @@
+/* CSS Document */
+* {
+	margin: 0px;
+    padding: 0px;
+}
+#container {
+    margin-top:50px;
+    text-align:center;
+}
+#message{
+    margin-top:50px;
+    border: 2px solid #f00;
+    border-radius: 10px;
+    padding: 4px 10px;
+    position: relative;
+    margin: 5px auto 30px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 13px;
+    text-shadow: 1px 1px #fff;
+    font-weight:bold;
+    color: #DC291E;
+    background-color: #eee;
+    background-image: -moz-linear-gradient( center bottom, #ddd 0%, #fff 100% );
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, #ddd), color-stop(1, #fff) );
+}
+#caption {
+    margin-top:30px;
+    width: 100%;
+    font-size:28px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#login_container{
+    width: 100%;
+}
+#login_border{
+    width: 220px; 
+    background-color: #DC291E; 
+    padding: 5px;
+    box-shadow: 0 0 5px #666;
+}
+#newuser_border{
+    width: 350px; 
+    background-color: #DC291E; 
+    padding: 5px;
+    box-shadow: 0 0 5px #666;
+}
+#login_panel {
+    box-shadow: inset 0 0 5px #666;
+    border: 2px solid #fff;
+    padding: 10px;
+    background-image: url("../images/red_bg.png");
+    background-color: #DC291E;
+}
+.index_label {
+    width: 180px;
+    font-size:14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+.index_label_large {
+    width: 180px;
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 1px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+.index_input_text {
+    padding: 4px 5px;
+    width: 140px;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #333333 inset;
+    border: 2px solid #FFFFFF;
+}
+.index_input_text_2 {
+    padding: 4px 5px;
+    width: 225px;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #333333 inset;
+    border: 2px solid #FFFFFF;
+}
+#index_submit {
+    text-shadow: 0 -1px 0 #111;
+    font-size: 13px; 
+    font-weight: bold;
+    border: 2px solid #fff;
+    line-height: 16px;
+    border-radius: 12px;
+    padding: 3px 0;
+    width: 75px;
+}
+#toolbar {
+    position:fixed;
+    bottom:0px;
+    left: 20px;
+    right: 20px;
+    margin: 0 auto;
+    height: 30px;
+    z-index: 999;
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
+}
+#submit_form {
+    font-size:13px;
+    color:#eee;
+    text-shadow: 0 1px 1px #000;
+}

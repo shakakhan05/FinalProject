@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title><%= @title %></title>
+  <%@title = "HOME"%>
+  <%= render 'layouts/stylesheets' %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<center>
+<div id="container">
+			<div id="message" class="hide"></div>
+			<div id="caption">
+				<%= image_tag('logo_600.png') %>
+			</div>
+			<center>
+						<div id="newuser_border" class="radius_super">
+							<div id="login_panel" class="radius_big">
+								<table width="100px">
+									<tr>
+										
+									
+									
+<%= form_for(@user) do |f| %>
+<div class="index_label">
+	<%= f.label :name %></div>
+	<div class ="index_input_text_2">
+	<%= f.text_field :name%>
+	</div>
+<div class="index_label">
+	<%= f.label :email %></div>
+	<div class = "index_input_text_2">
+	<%= f.text_field :email%>
+</div>
+<div class="index_label">
+	<%= f.label :password %></div>
+	<div class= "index_input_text_2">
+	<%= f.password_field :password%>
+	</div>
+<div class="index_label">
+	<%= f.label :password_confirmation, "Confirmation" %></div>
+	<div class="index_input_text_2">
+	<%= f.password_field :password_confirmation%>
+	</div>
+   
+  </div>
+  <br/>
+  <br/>
+  <div class="actions">
+    <%= f.submit 'Create User', :class => 'button' %>
+    <%= link_to 'Back Home',  root_path, :class => 'button' %>
+  </div>
+  <br/>
+  </center>
+<% end %>

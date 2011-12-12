@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+  <%@title = "HOME"%>
+  <%= render 'layouts/stylesheets' %>
+  <%= csrf_meta_tags %>
+  
+  
+  
+  <div id="welcome_word"><h2>
+    Welcome <span class="blue"><%= current_user.name%></span>, create your new offer <span class="red bold"></span> down below:</h2></div>
+   
+ <div id="logout"> <a href="/signout" class="signup_button round"><input type="button" class="button" value="Log out" id="logout_button"></div>
+
+<title>Home</title>
+</head>
+
+<body>
+ <%= stylesheet_link_tag 'home_style.css', :media => 'screen' %>
+ <%= stylesheet_link_tag 'index_style.css', :media => 'screen' %>
+
+  <div id="nav_bar">
+  
+    <table id="search_table">
+      <tr>
+        <td width="160px" height="30px"></td>
+        <td style="padding-right: 10px"><input type="text" id="search_field" value=""></td>
+
+        <td width="100px" style="padding-left: 5px"><input type="submit" id="search_submit" class="button" value="Search" /></td>
+        <td width="200px"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+<div id="container">
+  <table width="100%">
+    <tr>
+      <td width="150px" valign="top"><div id="left">
+<%= image_tag('logo_50.png') %>
+          <div id="sidebar_border">
+            <div id="sidebar">
+              <ul id="menu_ul">
+                <!-- <div id="chtsht_div">
+<div class="li_border"><li class="menu_li"> <a link="#">My Cheetsheet</a></li></div>
+</div> -->
+                
+                  <div class="button_white"><li class="menu_li"> <a href="/newoffer">New Offer</a></li></div>
+                    <div class="button_white"><li class="menu_li"> <a href="/newoffer">Product Groups</a></li></div>
+<div class="li_border"><li class="menu_li"> <a link="/home">Past 7 Day Offer List</a></li></div>
+                    <div class="li_border"><li class="menu_li"> <a link="/home">Expiring Offers</a></li></div>
+                    <div class="li_border"><li class="menu_li"> <a link="/home">Starting Offers</a></li></div>
+                   
+                  </ul>
+               
+             
+              </ul>
+            </div>
+          </div>
+        </div></td>
+      <td valign="top"><div id="right"><div class= "intro_text">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Product ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Status&n<bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</br></br>
+   </div>
+       <% @offer.each do |offer| %>
+ <div class="button_white_long"><li class="menu_li"> <a href="<%= edit_offer_path(offer) %>">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=offer.prodgrpid %>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=offer.sDate %>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=offer.eDate %>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=offer.Name %>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=offer.Status %>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+ </a></li></div>
+ 
+  <% end %>
+      
+
+                  </div></td>
+                  
+    <div id="right_container"> </div>
+  </td>
+    </tr>
+ 
+
+</table>
+</div>
+
+<br />
+
+
+
+</body>

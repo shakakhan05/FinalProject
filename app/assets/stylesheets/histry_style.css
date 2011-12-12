@@ -1,0 +1,162 @@
+/* CSS Document */
+#histry_container{
+    float: left;
+    width: 100%;	
+}
+#histry_container span{
+    font-weight: bold;
+}
+#histry_sidebar{
+    float: right;
+    width: 100%;
+    height: 100px;
+    margin-left: 10px;
+}
+#histry_title{
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    min-height: 30px;
+    line-height: 20px;
+    font-size: 13px;
+}
+#histry_toolbar{
+    float: right;
+}
+.histry_page_nav_border{
+    border: 2px solid #fff;
+    border-radius:99px;;
+    box-shadow: 0 1px 2px #666;
+    margin:5px 0 10px;	
+}
+.histry_page_nav{
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;	
+    border: 2px solid #DC291E;
+    padding: 3px 10px;
+    border-radius:20px;
+    text-shadow: 1px 1px 0 #fff;
+    line-height: 20px;
+}
+.histry_page_nav span{
+    font-size: 14px;	
+    margin-right: 5px;
+    margin-left: 5px;	
+}
+.histry_page_nav a, .histry_page_nav a:visited{
+    font-size: 14px;
+    color: #DC291E;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.histry_page_nav a:hover{
+    color: #004B91;
+}
+.histry_page_nav div a{
+    margin-right: 0;
+}
+#histry_title_msg{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px !important;
+    float:left;
+	width: 100%	
+}
+.order_border{
+    margin-bottom: 5px;
+    position:relative;
+}
+.order_title{
+    position:relative;
+    font-size:15px;
+    padding-left: 20px;
+    box-shadow: 0 1px 2px #666;		
+}
+.order_caption{
+    font-size: 13px;
+    color: #333;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #fff;
+}
+.order_body{
+    min-height: 80px;
+}
+#histry_show_filter, #histry_show_detail{
+    float: right;
+    position: relative;
+    margin-left: 5px;
+	width: 95px;
+}
+#histry_apply_filter{
+    position: relative;
+    margin-left: 5px;
+	width: 95px;
+    padding: 3px 0px !important;
+}
+#histry_show_filter:hover{
+    box-shadow:  0 0 3px #000, inset 0 0 6px #fff;;
+}
+#histry_filter_panel_border{
+    margin:10px 0; 
+    box-shadow: 0 1px 2px #666;
+	width: 630px;
+	margin: 10px auto;
+}
+#histry_filter_panel{
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px 15px 5px;
+    text-shadow: 1px 1px 0 #fff;
+}
+#histry_orders th, #histry_orders td{
+    font-size: 12px;
+    color: #333;
+    font-family:Arial, Helvetica, sans-serif;	
+}
+#set_histry_start_date, #set_histry_end_date{
+	position: relative;
+	bottom: -2px;
+	margin: 0 1px;
+	cursor: pointer;
+}
+.order_body th{
+    padding: 3px 0px;
+
+}
+.order_body td{
+    padding: 2px 10px;
+}
+hr{
+    border-width: 0;
+    height: 2px;
+    background-color: #ccc;
+}
+.histry_display_button{
+    position: relative;
+    bottom: -1px;
+    width: 16px;
+    height:16px;
+    float:right;
+    cursor: pointer;
+}
+#histry_filter_panel th{
+	padding: 2px 5px;
+}
+.histry_date{
+	width: 80px;
+}
+#histry_filter_panel input, #histry_filter_panel select, #histry_filter_panel option{
+	font-size: 13px;
+	padding: 0px 2px;
+}
+#histry_days{
+	width: 30px;
+}
+#histry_start_date, #histry_end_date{
+	width: 80px;
+}
+#histry_payment_more, #histry_payment_less{
+	width: 50px;
+}
